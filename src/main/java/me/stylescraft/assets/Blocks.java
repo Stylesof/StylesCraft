@@ -15,7 +15,7 @@ public class Blocks {
     public static final Block DAEDRIC_BLOCK = addBlock("daedric_block", new Block(FabricBlockSettings.create().strength(4.0f).requiresTool()));
     //BLOCKS
 
-    //BLOCK FUNCTIONS ------------------------------------------------------------------------------------------------------------------------TEST
+    //BLOCK FUNCTIONS ------------------------------------------------------------------------------------------------------------------------
     public static final Block addBlock(String name, Block block){
             addBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(StylesCraft.MOD_ID, name), block);
