@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import me.stylescraft.assets.Blocks;
 import me.stylescraft.assets.ItemGroup;
+import me.stylescraft.assets.Items;
 
 public class StylesCraft implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -21,9 +22,11 @@ public class StylesCraft implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		
+		//LOGGER.info("Hello Fabric world!");
 
-		LOGGER.info("Hello Fabric world!");
 		Blocks.registerModBlock();
+		Items.registerItems();
 		ItemGroup.registerItemGroup();
 	}
 }

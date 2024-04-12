@@ -15,10 +15,11 @@ public class ItemGroup {
     private static final net.minecraft.item.ItemGroup STYLESCRAFT_GROUP = Registry.register(Registries.ITEM_GROUP,
     new Identifier(StylesCraft.MOD_ID, "sc"),
     FabricItemGroup.builder().displayName(Text.translatable("itemgroup." + StylesCraft.MOD_ID + ".menu"))
-    .icon(() -> new ItemStack(Blocks.DAEDRIC_BLOCK)).entries((displayContext, entries) -> {
+    .icon(() -> new ItemStack(Items.ROCK)).entries((displayContext, entries) -> {
         
         //Items/Blocks to add
-        entries.add(Blocks.DAEDRIC_BLOCK);
+        //entries.add(Blocks.DAEDRIC_BLOCK);
+        entries.add(Items.ROCK);
 
     }).build());
 
