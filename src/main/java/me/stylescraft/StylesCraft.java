@@ -1,5 +1,6 @@
 package me.stylescraft;
 
+import me.stylescraft.assets.Entities;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -8,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import me.stylescraft.assets.Blocks;
 import me.stylescraft.assets.ItemGroup;
 import me.stylescraft.assets.Items;
+//import me.stylescraft.mixin.RemoveRecipes;
 
 public class StylesCraft implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -28,5 +30,7 @@ public class StylesCraft implements ModInitializer {
 		Blocks.registerModBlock();
 		Items.registerItems();
 		ItemGroup.registerItemGroup();
+		Entities.registerEntities();
+		//RemoveRecipes.registerRemoveRecipes();
 	}
 }

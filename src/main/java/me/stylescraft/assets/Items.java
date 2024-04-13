@@ -1,6 +1,7 @@
 package me.stylescraft.assets;
 
 import me.stylescraft.StylesCraft;
+import me.stylescraft.assets.items.Rock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -9,13 +10,13 @@ import net.minecraft.util.Identifier;
 
 public class Items {
 
-    public static final Item ROCK = addItem("rock", new Item(new Item.Settings()));
+    public static final Item ROCK = addItem("rock", new Rock(new FabricItemSettings()));
     
-    public static final Item addItem(String name, Item item){
+    public static Item addItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(StylesCraft.MOD_ID, name), item);
     }
 
-    public static final void registerItems(){
+    public static void registerItems(){
         StylesCraft.LOGGER.info("Loading Items from: " + StylesCraft.MOD_ID);
     }
 }

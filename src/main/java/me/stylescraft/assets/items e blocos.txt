@@ -1,5 +1,6 @@
 Futuros Items a serem adicionados:
 
--Pedra
+-Pedra X
 -Fogueira
 -Faca (Madeira, Ferro, etc)
+-Lança
